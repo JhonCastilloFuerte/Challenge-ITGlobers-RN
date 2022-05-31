@@ -27,7 +27,7 @@ const Button = (props: IProps) => {
       >
         <LinearGradient 
           start={{x: 0, y: 0}} end={{x: 1, y: 0}}
-          colors={['#ff943f', Colors.VIOLET]}
+          colors={[Colors.ORANGE, Colors.VIOLET]}
           style={style.gradient}
         >
         <Text style={[style.text, textStyle]}>{title}</Text>

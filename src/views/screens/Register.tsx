@@ -55,7 +55,6 @@ const RegisterView = ({ navigation }: IProps) => {
         title='Registrarse'
       />
 
-
       <Text style={style.register} onPress={handleBack}>Volver a Login</Text>
 
     </LinearGradient>

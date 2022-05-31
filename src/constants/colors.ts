@@ -6,7 +6,7 @@ export enum Colors {
   TEXT_DARK = '#1D2734',
   GREEN = '#6AC35E',
   PLACEHOLDER = '#98A5B8',
-
+  ORANGE = '#ff943f',
   BLACK = '#000000',
   WHITE = '#FFFFFF',
 }
