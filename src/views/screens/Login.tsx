@@ -6,19 +6,23 @@ import { Button, TextInput } from '@components/index';
 
 import LOGO from "@assets/Logo.png";
 import LinearGradient from 'react-native-linear-gradient';
+import { StackScreenProps } from '@react-navigation/stack';
 
 const DefaultText = {
   email: 'Email',
   password: 'Contraseña'
 }
 
-const handleRegister = () => {
-  console.log('Registrarse')
-}
+interface IProps extends StackScreenProps<any, any> {}
 
-const LoginView = () => {
+const LoginView = ({ navigation }: IProps) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  
+  
+  const handleRegister = () => {
+    navigation.navigate('Register');
+  }
 
   return (
     <LinearGradient colors={[ Colors.PRIMARY, Colors.VIOLET ]} style={style.container}>
@@ -39,6 +43,7 @@ const LoginView = () => {
       />
       <Button
         title='Iniciar Sesión'
+        onPress={() => navigation.navigate('Pagination')}
       />
       <Text style={style.register} onPress={handleRegister}>Regitrarse</Text>
     </LinearGradient>

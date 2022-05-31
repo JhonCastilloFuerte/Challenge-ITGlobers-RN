@@ -6,6 +6,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import {style, Colors} from '@views/styles/registerStyles'
 
 import LOGO from "@assets/Logo.png";
+import { StackScreenProps } from '@react-navigation/stack';
 
 
 const DefaultText = {
@@ -14,13 +15,16 @@ const DefaultText = {
   confirmPassword:  'Confirmar Contraseña'
 }
 
-const RegisterView = () => {
+interface IProps extends StackScreenProps<any, any> {}
+
+
+const RegisterView = ({ navigation }: IProps) => {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleBack = () =>{
-    console.log('Volver a Login')
+    navigation.navigate('Login');
   }
 
   return (

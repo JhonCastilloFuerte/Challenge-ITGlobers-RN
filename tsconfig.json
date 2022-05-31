@@ -31,15 +31,6 @@
       "@navigation/*": [
         "src/navigation/*"
       ],
-      "@packages/*": [
-        "src/packages/*"
-      ],
-      "@api/*": [
-        "src/api/*"
-      ],
-      "@helpers/*": [
-        "src/helpers/*"
-      ]
     },
   },
   "exclude": [
