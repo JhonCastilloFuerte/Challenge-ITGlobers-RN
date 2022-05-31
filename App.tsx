@@ -1,12 +1,10 @@
 import React from 'react';
-import { SafeAreaView, Text } from 'react-native';
+import { LoginView,RegisterView } from '@views/screens';
 
 const App = () => {
 
   return (
-    <SafeAreaView>
-      <Text>ChallengeITGlobersRN</Text>
-    </SafeAreaView>
+    <LoginView />
   );
 };
 
