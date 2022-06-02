@@ -88,14 +88,11 @@ const RegisterView = ({ navigation }: IProps) => {
         onChangeValue={setConfirmPassword}
         secureText
       />
-
       <Button 
         title='Registrarse'
         onPress={handleSubmit}
       />
-
       <Text style={style.register} onPress={handleBack}>Volver a Login</Text>
-
     </LinearGradient>
   )
 }

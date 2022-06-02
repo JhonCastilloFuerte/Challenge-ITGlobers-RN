@@ -47,7 +47,6 @@ const PaginationView = ({ navigation }: IProps) => {
   }
 
   useEffect(() => {
-    console.log('Entra useEffect');
     navigation.setOptions({
       headerRight: () =>(
         <TouchableOpacity style={[style.options]}

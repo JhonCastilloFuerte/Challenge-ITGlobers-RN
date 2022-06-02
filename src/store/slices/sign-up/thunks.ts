@@ -12,7 +12,6 @@ export const postSignUp = ({email = '', password = ''}:SignUpInteface) =>{
 
   return async (dispatch: any) =>{
     try {
-      console.log(email, password);
       const resp = await axios.post('https://reqres.in/api/register', {email, password});
       if(resp.status == 200){
         const {data} = resp;

@@ -20,9 +20,7 @@ export const signUpSlice = createSlice({
   reducers: {
     setSession: (state, action: any) => {
       const {payload} = action;
-      console.log('initial state: ',state)
       state = {...payload};
-      console.log('state: ',state)
     },
 
     cleanSession: (state) => {
