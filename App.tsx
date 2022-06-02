@@ -1,14 +1,13 @@
+import Main from '@views/Main';
 import React from 'react';
-import { LoginView,RegisterView } from '@views/screens';
-import { NavigationContainer } from '@react-navigation/native';
-import { StackNavigator } from '@navigation/index';
+import { store } from '@store/index'
+import { Provider } from 'react-redux'
 
 const App = () => {
-
   return (
-    <NavigationContainer>
-      <StackNavigator />
-    </NavigationContainer>
+    <Provider store={store}>
+      <Main/>
+    </Provider>
   );
 };
 

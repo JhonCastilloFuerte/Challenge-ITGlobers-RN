@@ -31,6 +31,9 @@
       "@navigation/*": [
         "src/navigation/*"
       ],
+      "@store/*": [
+        "src/store/*"
+      ],
     },
   },
   "exclude": [

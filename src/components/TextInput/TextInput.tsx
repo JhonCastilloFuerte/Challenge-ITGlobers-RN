@@ -65,7 +65,7 @@ const CustomTextInput = (props: IProps) => {
               <FeatherIcon
                 name={isSecure ? 'eye' : 'eye-off'}
                 size={secureIconSize}
-                color={Colors.SECONDARY}
+                color={Colors.ROSE}
               />
             </TouchableOpacity>
           </View>

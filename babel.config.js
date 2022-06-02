@@ -11,6 +11,7 @@ module.exports = {
           '@constants': './src/constants',
           '@assets': './src/assets',
           '@navigation': './src/navigation',
+          '@store': './src/store'
         }
       }
     ]

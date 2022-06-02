@@ -15,23 +15,30 @@ interface IProps {
   title: string;
   textStyle?: StyleProp<TextStyle>;
   buttonStyle?: StyleProp<TextStyle>;
+  buttonColor?: string;
 }
 
 const Button = (props: IProps) => {
-  const { onPress, title, textStyle, buttonStyle } = props;
+  const { onPress, title, textStyle, buttonStyle, buttonColor } = props;
+
+  const ColorsGradient = !buttonColor ? [
+    Colors.ORANGE,
+    Colors.VIOLET
+  ] : [buttonColor, buttonColor]
+  
 
   return (
       <TouchableOpacity
         style={[style.container, buttonStyle]}
         onPress={onPress}
       >
-        <LinearGradient 
-          start={{x: 0, y: 0}} end={{x: 1, y: 0}}
-          colors={[Colors.ORANGE, Colors.VIOLET]}
-          style={style.gradient}
-        >
-        <Text style={[style.text, textStyle]}>{title}</Text>
-        </LinearGradient>
+          <LinearGradient 
+            style={[style.gradient, buttonStyle]}
+            start={{x: 0, y: 0}} end={{x: 1, y: 0}}
+            colors={ColorsGradient}
+          >
+            <Text style={[style.text, textStyle]}>{title}</Text>
+          </LinearGradient>
       </TouchableOpacity>
   );
 };

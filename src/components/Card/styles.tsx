@@ -38,7 +38,10 @@ const styles = StyleSheet.create({
     fontWeight: '700'
   },
   subtitle:{
-
+    fontWeight: '500'
+  },
+  info: {
+    minWidth: '50%'
   }
 });
 
